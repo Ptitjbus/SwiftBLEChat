@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatView: View {
     @State private var inputText: String = ""
-    @State private var isUsernamePopupVisible: Bool = true    
+    @State private var isUsernamePopupVisible: Bool = false
     @StateObject private var model = ChatViewModel.defaultChatViewModel()
     
     var body: some View {
@@ -37,6 +37,11 @@ struct ChatView: View {
         }.sheet(isPresented: $isUsernamePopupVisible) {
             UsernameInputView(username: $model.username, isPopupVisible: $isUsernamePopupVisible)
         }.onAppear(perform: {
+            if let user = Storage.instance.getUsername() {
+                model.username = user
+            } else {
+                isUsernamePopupVisible = true
+            }
             model.listen()
         })
     }
