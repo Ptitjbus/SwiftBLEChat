@@ -23,6 +23,7 @@ struct UsernameInputView: View {
                 .cornerRadius(10)
 
             Button("Valider") {
+                Storage.instance.saveUsername(username)
                 isPopupVisible = false
             }
             .padding()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB17119E2AF551E00074E3DD /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17119D2AF551E00074E3DD /* Storage.swift */; };
 		ED4B73192AF4E6CE004C5825 /* SwiftUi_BLEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B73182AF4E6CE004C5825 /* SwiftUi_BLEApp.swift */; };
 		ED4B731B2AF4E6CE004C5825 /* BLEConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B731A2AF4E6CE004C5825 /* BLEConnectionView.swift */; };
 		ED4B731D2AF4E6CF004C5825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4B731C2AF4E6CF004C5825 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB17119D2AF551E00074E3DD /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		ED4B73152AF4E6CE004C5825 /* SwiftUi_BLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUi_BLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4B73182AF4E6CE004C5825 /* SwiftUi_BLEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUi_BLEApp.swift; sourceTree = "<group>"; };
 		ED4B731A2AF4E6CE004C5825 /* BLEConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConnectionView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				ED4B73512AF52B10004C5825 /* Chat */,
 				ED4B73442AF4E903004C5825 /* BLE */,
 				ED4B73182AF4E6CE004C5825 /* SwiftUi_BLEApp.swift */,
+				DB17119D2AF551E00074E3DD /* Storage.swift */,
 				ED4B731C2AF4E6CF004C5825 /* Assets.xcassets */,
 				ED4B731E2AF4E6CF004C5825 /* Preview Content */,
 			);
@@ -331,6 +334,7 @@
 				ED4B73462AF4E91E004C5825 /* BLEConnectionViewModel.swift in Sources */,
 				ED4B73592AF52CE6004C5825 /* ChatViewModel.swift in Sources */,
 				ED4B73192AF4E6CE004C5825 /* SwiftUi_BLEApp.swift in Sources */,
+				DB17119E2AF551E00074E3DD /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
