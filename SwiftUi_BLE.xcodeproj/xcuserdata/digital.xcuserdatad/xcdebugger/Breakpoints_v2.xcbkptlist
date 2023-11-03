@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D0DCC0C8-3A55-4B93-BAC7-F953F6F87126"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDED007F-15A7-47E4-BAAD-EEBECF9F9888"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUi_BLE/Chat/ChatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "listen()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FDED007F-15A7-47E4-BAAD-EEBECF9F9888 - 302d7806d5f37d62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in SwiftUi_BLE.ChatViewModel.listen() -&gt; ()"
+                  moduleName = "SwiftUi_BLE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/digital/Desktop/SwiftB3/SwiftUi_BLE/SwiftUi_BLE/Chat/ChatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "FDED007F-15A7-47E4-BAAD-EEBECF9F9888 - 302d7806d5f37d62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in SwiftUi_BLE.ChatViewModel.listen() -&gt; ()"
+                  moduleName = "SwiftUi_BLE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/digital/Desktop/SwiftB3/SwiftUi_BLE/SwiftUi_BLE/Chat/ChatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "376">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
