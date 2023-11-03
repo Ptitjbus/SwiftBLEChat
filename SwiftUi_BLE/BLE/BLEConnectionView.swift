@@ -16,9 +16,6 @@ struct BLEConnectionView: View {
     var body: some View {
         NavigationView{
             VStack(alignment: .trailing) {
-                Text(model.isScanning ? "Stop" : "Scan").onTapGesture {
-                    model.isScanning ? model.stopScan() : model.startScan()
-                }.foregroundStyle(.blue)
                 List(model.bleObjects) { bleObj in
                     NavigationLink(isActive: $isConnected, destination: {
                         ChatView()
@@ -40,6 +37,18 @@ struct BLEConnectionView: View {
                 })
             }
             .navigationTitle("BLE Connections")
+            .toolbar {
+                Button {
+                    model.isScanning ? model.stopScan() : model.startScan()
+                } label: {
+                    if model.isScanning{
+                        Label("Stop", systemImage: "stop.circle")
+                    } else {
+                        Label("Scan", systemImage: "dot.radiowaves.left.and.right")
+                    }
+                }
+                .tint(model.isScanning ? .red : .accentColor)
+            }
             .padding()
         }.onAppear(perform: {
             _ = BLEManager.instance

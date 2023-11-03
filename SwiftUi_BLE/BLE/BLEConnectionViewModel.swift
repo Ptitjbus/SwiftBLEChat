@@ -54,21 +54,21 @@ class BLEConnectionViewModel: ObservableObject {
 extension BLEConnectionViewModel {
     
     static func defaultBLEConnectionViewModel() -> BLEConnectionViewModel {
-        var objectList = (0..<10).map{ BLEObjectViewModel(name: "prout \($0)")}
+        let objectList = (0..<10).map{ BLEObjectViewModel(name: "prout \($0)")}
         let instance = BLEConnectionViewModel()
         instance.bleObjects = objectList
         return instance
     }
     
     static func defaultEmptyBLEConnectionViewModel() -> BLEConnectionViewModel {
-        var objectList = (0..<0).map{ BLEObjectViewModel(name: "prout \($0)")}
+        let objectList = (0..<0).map{ BLEObjectViewModel(name: "prout \($0)")}
         let instance = BLEConnectionViewModel()
         instance.bleObjects = objectList
         return instance
     }
     
     static func defaultBigBLEConnectionViewModel() -> BLEConnectionViewModel {
-        var objectList = (0..<100).map{ BLEObjectViewModel(name: "prout \($0)")}
+        let objectList = (0..<100).map{ BLEObjectViewModel(name: "prout \($0)")}
         let instance = BLEConnectionViewModel()
         instance.bleObjects = objectList
         return instance

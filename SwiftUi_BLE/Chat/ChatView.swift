@@ -13,6 +13,7 @@ struct ChatView: View {
     @StateObject private var model = ChatViewModel.defaultChatViewModel()
     
     var body: some View {
+        
         VStack(spacing: 10) {
             Text("Chat")
                 .font(.title)
@@ -20,7 +21,8 @@ struct ChatView: View {
             
             List(model.messages) { message in
                 ChatBubbleView(message: message, username: model.username)
-            }.scrollContentBackground(.hidden)
+            }
+            .scrollContentBackground(.hidden)
             
             Spacer()
 
@@ -34,9 +36,11 @@ struct ChatView: View {
             .background(Color.gray.opacity(0.2))
             .cornerRadius(10)
             .padding(.horizontal)
-        }.sheet(isPresented: $isUsernamePopupVisible) {
+        }
+        .sheet(isPresented: $isUsernamePopupVisible) {
             UsernameInputView(username: $model.username, isPopupVisible: $isUsernamePopupVisible)
-        }.onAppear(perform: {
+        }
+        .onAppear(perform: {
             if let user = Storage.instance.getUsername() {
                 model.username = user
             } else {
